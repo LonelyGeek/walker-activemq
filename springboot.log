@@ -1,0 +1,449 @@
+2016-09-05 00:15:01.268  INFO 2696 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 2696 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:15:01.273  INFO 2696 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:15:01.367  INFO 2696 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:15:01 CST 2016]; root of context hierarchy
+2016-09-05 00:15:03.490  INFO 2696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:15:03.507  INFO 2696 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:15:03.509  INFO 2696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:15:03.649  INFO 2696 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:15:03.650  INFO 2696 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2288 ms
+2016-09-05 00:15:03.811  INFO 2696 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:15:03.815  INFO 2696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:15:03.815  INFO 2696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:15:03.815  INFO 2696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:15:03.815  INFO 2696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:15:04.210  INFO 2696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:15:01 CST 2016]; root of context hierarchy
+2016-09-05 00:15:04.271  INFO 2696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:15:04.276  INFO 2696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:15:04.277  INFO 2696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:15:04.283  INFO 2696 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:15:04.299  INFO 2696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:15:04.312  INFO 2696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:15:04.313  INFO 2696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:15:04.372  INFO 2696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:15:04.597  INFO 2696 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:15:04.605  INFO 2696 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:15:04.657  INFO 2696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:15:04.662  INFO 2696 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 3.862 seconds (JVM running for 4.295)
+2016-09-05 00:15:35.910  INFO 2696 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:15:35.911  INFO 2696 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:15:35.926  INFO 2696 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-09-05 00:16:16.032  INFO 1864 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 1864 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:16:16.048  INFO 1864 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:16:16.142  INFO 1864 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72057ecf: startup date [Mon Sep 05 00:16:16 CST 2016]; root of context hierarchy
+2016-09-05 00:16:17.974  INFO 1864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:16:17.987  INFO 1864 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:16:17.988  INFO 1864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:16:18.114  INFO 1864 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:16:18.115  INFO 1864 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1972 ms
+2016-09-05 00:16:18.264  INFO 1864 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:16:18.280  INFO 1864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:16:18.280  INFO 1864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:16:18.280  INFO 1864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:16:18.280  INFO 1864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:16:18.667  INFO 1864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72057ecf: startup date [Mon Sep 05 00:16:16 CST 2016]; root of context hierarchy
+2016-09-05 00:16:18.720  INFO 1864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:16:18.736  INFO 1864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:16:18.736  INFO 1864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:16:18.736  INFO 1864 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:16:18.751  INFO 1864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:16:18.767  INFO 1864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:16:18.767  INFO 1864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:16:18.814  INFO 1864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:16:19.160  INFO 1864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:16:19.170  INFO 1864 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:16:19.219  INFO 1864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:16:19.225  INFO 1864 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 3.659 seconds (JVM running for 4.072)
+2016-09-05 00:16:44.425  INFO 1864 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:16:44.425  INFO 1864 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:16:44.440  INFO 1864 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-09-05 00:17:28.578  INFO 5672 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 5672 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:17:28.594  INFO 5672 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:17:28.676  INFO 5672 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:17:28 CST 2016]; root of context hierarchy
+2016-09-05 00:17:30.776  INFO 5672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:17:30.776  INFO 5672 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:17:30.776  INFO 5672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:17:30.916  INFO 5672 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:17:30.916  INFO 5672 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2256 ms
+2016-09-05 00:17:31.095  INFO 5672 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:17:31.095  INFO 5672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:17:31.095  INFO 5672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:17:31.095  INFO 5672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:17:31.095  INFO 5672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:17:31.492  INFO 5672 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:17:28 CST 2016]; root of context hierarchy
+2016-09-05 00:17:31.560  INFO 5672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:17:31.565  INFO 5672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:17:31.565  INFO 5672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:17:31.569  INFO 5672 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:17:31.594  INFO 5672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:17:31.608  INFO 5672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:17:31.609  INFO 5672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:17:31.661  INFO 5672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:17:31.896  INFO 5672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:17:31.903  INFO 5672 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:17:31.962  INFO 5672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:17:31.968  INFO 5672 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 3.846 seconds (JVM running for 4.275)
+2016-09-05 00:17:53.177  INFO 5672 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:17:53.177  INFO 5672 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:17:53.192  INFO 5672 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-09-05 00:19:59.387  INFO 1764 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 1764 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:19:59.387  INFO 1764 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:19:59.478  INFO 1764 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:19:59 CST 2016]; root of context hierarchy
+2016-09-05 00:20:01.342  INFO 1764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:20:01.362  INFO 1764 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:20:01.363  INFO 1764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:20:01.477  INFO 1764 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:20:01.478  INFO 1764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2005 ms
+2016-09-05 00:20:01.619  INFO 1764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:20:01.623  INFO 1764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:20:01.623  INFO 1764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:20:01.624  INFO 1764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:20:01.624  INFO 1764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:20:01.989  INFO 1764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:19:59 CST 2016]; root of context hierarchy
+2016-09-05 00:20:02.058  INFO 1764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:20:02.062  INFO 1764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:20:02.063  INFO 1764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:20:02.067  INFO 1764 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:20:02.086  INFO 1764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:20:02.100  INFO 1764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:20:02.100  INFO 1764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:20:02.157  INFO 1764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:20:02.361  INFO 1764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:20:02.370  INFO 1764 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:20:02.425  INFO 1764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:20:02.430  INFO 1764 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 3.496 seconds (JVM running for 3.924)
+2016-09-05 00:20:31.950  INFO 1764 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:20:31.951  INFO 1764 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:20:31.966  INFO 1764 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-09-05 00:37:19.034  INFO 5708 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 5708 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:37:19.038  INFO 5708 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:37:19.153  INFO 5708 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:37:19 CST 2016]; root of context hierarchy
+2016-09-05 00:37:21.284  INFO 5708 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:37:21.296  INFO 5708 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:37:21.296  INFO 5708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:37:21.428  INFO 5708 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:37:21.428  INFO 5708 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2279 ms
+2016-09-05 00:37:21.626  INFO 5708 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:37:21.632  INFO 5708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:37:21.632  INFO 5708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:37:21.633  INFO 5708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:37:21.633  INFO 5708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:37:22.079  INFO 5708 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:37:19 CST 2016]; root of context hierarchy
+2016-09-05 00:37:22.153  INFO 5708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:37:22.157  INFO 5708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:37:22.158  INFO 5708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:37:22.162  INFO 5708 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:37:22.177  INFO 5708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:37:22.195  INFO 5708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:37:22.195  INFO 5708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:37:22.252  INFO 5708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:37:22.460  INFO 5708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:37:22.467  INFO 5708 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:37:22.522  INFO 5708 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:37:22.527  INFO 5708 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 3.987 seconds (JVM running for 4.452)
+2016-09-05 00:37:23.106  INFO 5708 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:37:23.106  INFO 5708 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:37:23.126  INFO 5708 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2016-09-05 00:37:56.669  INFO 3132 --- [main] c.i.a.r.c.ReleaseConsumerApplication     : Starting ReleaseConsumerApplication on DESKTOP-QP0RUAG with PID 3132 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:37:56.673  INFO 3132 --- [main] c.i.a.r.c.ReleaseConsumerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:37:56.754  INFO 3132 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:37:56 CST 2016]; root of context hierarchy
+2016-09-05 00:37:58.845  INFO 3132 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:37:58.861  INFO 3132 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:37:58.861  INFO 3132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:37:58.993  INFO 3132 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:37:58.993  INFO 3132 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2243 ms
+2016-09-05 00:37:59.159  INFO 3132 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:37:59.164  INFO 3132 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:37:59.165  INFO 3132 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:37:59.166  INFO 3132 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:37:59.166  INFO 3132 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:37:59.559  INFO 3132 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:37:56 CST 2016]; root of context hierarchy
+2016-09-05 00:37:59.631  INFO 3132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:37:59.632  INFO 3132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:37:59.645  INFO 3132 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:37:59.663  INFO 3132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:37:59.679  INFO 3132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:37:59.679  INFO 3132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:37:59.729  INFO 3132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:37:59.979  INFO 3132 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:37:59.985  INFO 3132 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:38:00.163  INFO 3132 --- [main] o.s.j.c.CachingConnectionFactory         : Established shared JMS Connection: ActiveMQConnection {id=ID:DESKTOP-QP0RUAG-6934-1473007080046-1:1,clientId=null,started=false}
+2016-09-05 00:38:00.242  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Hello Queue Message. Date：2016-09-05 00:15:35
+2016-09-05 00:38:00.249  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:16:44
+2016-09-05 00:38:00.250  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:17:53
+2016-09-05 00:38:00.250  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:20:31
+2016-09-05 00:38:00.251  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:20:37
+2016-09-05 00:38:00.251  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:21:04
+2016-09-05 00:38:00.252  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:37:23
+2016-09-05 00:38:00.253  INFO 3132 --- [getMessageListenerContainer-8] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:37:24
+2016-09-05 00:38:00.254  INFO 3132 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:38:00.260  INFO 3132 --- [main] c.i.a.r.c.ReleaseConsumerApplication     : Started ReleaseConsumerApplication in 4.064 seconds (JVM running for 4.509)
+2016-09-05 00:38:03.732  INFO 3132 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:38:03.732  INFO 3132 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:38:03.747  INFO 3132 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-09-05 00:38:48.388  INFO 3140 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 3140 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:38:48.388  INFO 3140 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:38:48.502  INFO 3140 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:38:48 CST 2016]; root of context hierarchy
+2016-09-05 00:38:50.453  INFO 3140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:38:50.469  INFO 3140 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:38:50.469  INFO 3140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:38:50.598  INFO 3140 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:38:50.598  INFO 3140 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2096 ms
+2016-09-05 00:38:50.795  INFO 3140 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:38:50.804  INFO 3140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:38:50.808  INFO 3140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:38:50.809  INFO 3140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:38:50.809  INFO 3140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:38:51.270  INFO 3140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:38:48 CST 2016]; root of context hierarchy
+2016-09-05 00:38:51.343  INFO 3140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:38:51.348  INFO 3140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:38:51.349  INFO 3140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:38:51.354  INFO 3140 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:38:51.370  INFO 3140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:38:51.370  INFO 3140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:38:51.370  INFO 3140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:38:51.417  INFO 3140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:38:51.682  INFO 3140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:38:51.691  INFO 3140 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:38:51.726 ERROR 3140 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8099]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_101]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at club.iwalker.activemq.release.producer.ReleaseProducerApplication.main(ReleaseProducerApplication.java:12) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:na]
+
+2016-09-05 00:38:51.729 ERROR 3140 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8099]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8099]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at club.iwalker.activemq.release.producer.ReleaseProducerApplication.main(ReleaseProducerApplication.java:12) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_101]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 19 common frames omitted
+
+2016-09-05 00:38:51.742  INFO 3140 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2016-09-05 00:38:51.755  INFO 3140 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2016-09-05 00:38:51.767 ERROR 3140 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8099 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8099 or configure this application to listen on another port.
+
+2016-09-05 00:38:51.769  INFO 3140 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:38:48 CST 2016]; root of context hierarchy
+2016-09-05 00:38:51.770  INFO 3140 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2016-09-05 00:38:51.771  INFO 3140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-09-05 00:39:12.831  INFO 6200 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 6200 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:39:12.831  INFO 6200 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:39:12.925  INFO 6200 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:39:12 CST 2016]; root of context hierarchy
+2016-09-05 00:39:14.852  INFO 6200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:39:14.870  INFO 6200 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:39:14.872  INFO 6200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:39:14.999  INFO 6200 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:39:14.999  INFO 6200 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2074 ms
+2016-09-05 00:39:15.172  INFO 6200 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:39:15.177  INFO 6200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:39:15.178  INFO 6200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:39:15.178  INFO 6200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:39:15.178  INFO 6200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:39:15.574  INFO 6200 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Mon Sep 05 00:39:12 CST 2016]; root of context hierarchy
+2016-09-05 00:39:15.636  INFO 6200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:39:15.641  INFO 6200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:39:15.642  INFO 6200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:39:15.647  INFO 6200 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:39:15.666  INFO 6200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:39:15.691  INFO 6200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:39:15.691  INFO 6200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:39:15.743  INFO 6200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:39:15.968  INFO 6200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:39:15.978  INFO 6200 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:39:16.034  INFO 6200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:39:16.039  INFO 6200 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 3.669 seconds (JVM running for 4.098)
+2016-09-05 00:39:27.510  INFO 6200 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:39:27.511  INFO 6200 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:39:27.526  INFO 6200 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-09-05 00:40:09.143  INFO 9056 --- [main] c.i.a.r.c.ReleaseConsumerApplication     : Starting ReleaseConsumerApplication on DESKTOP-QP0RUAG with PID 9056 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:40:09.143  INFO 9056 --- [main] c.i.a.r.c.ReleaseConsumerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:40:09.237  INFO 9056 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f058f00: startup date [Mon Sep 05 00:40:09 CST 2016]; root of context hierarchy
+2016-09-05 00:40:11.329  INFO 9056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:40:11.343  INFO 9056 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:40:11.345  INFO 9056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:40:11.470  INFO 9056 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:40:11.470  INFO 9056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2233 ms
+2016-09-05 00:40:11.632  INFO 9056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:40:11.636  INFO 9056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:40:11.637  INFO 9056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:40:11.637  INFO 9056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:40:11.637  INFO 9056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:40:12.029  INFO 9056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f058f00: startup date [Mon Sep 05 00:40:09 CST 2016]; root of context hierarchy
+2016-09-05 00:40:12.120  INFO 9056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:40:12.121  INFO 9056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:40:12.125  INFO 9056 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:40:12.137  INFO 9056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:40:12.148  INFO 9056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:40:12.148  INFO 9056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:40:12.192  INFO 9056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:40:12.411  INFO 9056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:40:12.417  INFO 9056 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:40:12.577  INFO 9056 --- [main] o.s.j.c.CachingConnectionFactory         : Established shared JMS Connection: ActiveMQConnection {id=ID:DESKTOP-QP0RUAG-7003-1473007212462-1:1,clientId=null,started=false}
+2016-09-05 00:40:12.652  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:27
+2016-09-05 00:40:12.657  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:43
+2016-09-05 00:40:12.658  INFO 9056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:40:12.658  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:53
+2016-09-05 00:40:12.659  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:54
+2016-09-05 00:40:12.659  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:54
+2016-09-05 00:40:12.660  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:55
+2016-09-05 00:40:12.661  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:56
+2016-09-05 00:40:12.662  INFO 9056 --- [getMessageListenerContainer-1] c.i.a.r.c.config.ConsumerListener        : TextMessage: Release Queue Message. Date：2016-09-05 00:39:56
+2016-09-05 00:40:12.665  INFO 9056 --- [main] c.i.a.r.c.ReleaseConsumerApplication     : Started ReleaseConsumerApplication in 3.971 seconds (JVM running for 4.393)
+2016-09-05 00:41:38.098  INFO 8980 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 8980 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:41:38.114  INFO 8980 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:41:38.192  INFO 8980 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bcd05cb: startup date [Mon Sep 05 00:41:38 CST 2016]; root of context hierarchy
+2016-09-05 00:41:40.025  INFO 8980 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:41:40.042  INFO 8980 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:41:40.045  INFO 8980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:41:40.180  INFO 8980 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:41:40.180  INFO 8980 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1988 ms
+2016-09-05 00:41:40.367  INFO 8980 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:41:40.373  INFO 8980 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:41:40.373  INFO 8980 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:41:40.373  INFO 8980 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:41:40.373  INFO 8980 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:41:40.876  INFO 8980 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bcd05cb: startup date [Mon Sep 05 00:41:38 CST 2016]; root of context hierarchy
+2016-09-05 00:41:40.962  INFO 8980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:41:40.968  INFO 8980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:41:40.968  INFO 8980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:41:40.973  INFO 8980 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:41:40.993  INFO 8980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:41:41.008  INFO 8980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:41:41.008  INFO 8980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:41:41.063  INFO 8980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:41:41.405  INFO 8980 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:41:41.414  INFO 8980 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:41:41.486  INFO 8980 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:41:41.491  INFO 8980 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 4.129 seconds (JVM running for 4.893)
+2016-09-05 00:41:45.999  INFO 8980 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:41:45.999  INFO 8980 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:41:46.025  INFO 8980 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2016-09-05 00:42:55.503  INFO 8392 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 8392 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:42:55.509  INFO 8392 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:42:55.618  INFO 8392 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bcd05cb: startup date [Mon Sep 05 00:42:55 CST 2016]; root of context hierarchy
+2016-09-05 00:42:57.711  INFO 8392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:42:57.727  INFO 8392 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:42:57.729  INFO 8392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:42:57.869  INFO 8392 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:42:57.869  INFO 8392 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2255 ms
+2016-09-05 00:42:58.063  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:42:58.069  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:42:58.070  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:42:58.070  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:42:58.070  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:42:58.607  INFO 8392 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bcd05cb: startup date [Mon Sep 05 00:42:55 CST 2016]; root of context hierarchy
+2016-09-05 00:42:58.698  INFO 8392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:42:58.704  INFO 8392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:42:58.704  INFO 8392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:42:58.708  INFO 8392 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:42:58.730  INFO 8392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:42:58.747  INFO 8392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:42:58.747  INFO 8392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:42:58.800  INFO 8392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:42:59.147  INFO 8392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:42:59.156  INFO 8392 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:42:59.217  INFO 8392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:42:59.224  INFO 8392 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 4.422 seconds (JVM running for 5.093)
+2016-09-05 00:43:01.506  INFO 8392 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:43:01.506  INFO 8392 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:43:01.524  INFO 8392 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2016-09-05 00:44:13.825  INFO 5096 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Starting ReleaseProducerApplication on DESKTOP-QP0RUAG with PID 5096 (D:\IdeaProjects\walker-activemq\build\classes\main started by wangchen in D:\IdeaProjects\walker-activemq)
+2016-09-05 00:44:13.832  INFO 5096 --- [main] c.i.a.r.p.ReleaseProducerApplication     : No active profile set, falling back to default profiles: default
+2016-09-05 00:44:13.948  INFO 5096 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bcd05cb: startup date [Mon Sep 05 00:44:13 CST 2016]; root of context hierarchy
+2016-09-05 00:44:15.903  INFO 5096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8099 (http)
+2016-09-05 00:44:15.923  INFO 5096 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-05 00:44:15.925  INFO 5096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-05 00:44:16.075  INFO 5096 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring embedded WebApplicationContext
+2016-09-05 00:44:16.076  INFO 5096 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2132 ms
+2016-09-05 00:44:16.292  INFO 5096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-05 00:44:16.297  INFO 5096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-05 00:44:16.298  INFO 5096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-05 00:44:16.298  INFO 5096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-05 00:44:16.298  INFO 5096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-05 00:44:16.917  INFO 5096 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bcd05cb: startup date [Mon Sep 05 00:44:13 CST 2016]; root of context hierarchy
+2016-09-05 00:44:16.997  INFO 5096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sendReleaseMsg]}" onto public void club.iwalker.activemq.release.producer.web.ProducerController.sendMessage()
+2016-09-05 00:44:17.002  INFO 5096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-05 00:44:17.003  INFO 5096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-05 00:44:17.009  INFO 5096 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2016-09-05 00:44:17.030  INFO 5096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-05 00:44:17.049  INFO 5096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:44:17.050  INFO 5096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:44:17.116  INFO 5096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-05 00:44:17.464  INFO 5096 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-05 00:44:17.479  INFO 5096 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-05 00:44:17.542  INFO 5096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8099 (http)
+2016-09-05 00:44:17.542  INFO 5096 --- [main] c.i.a.r.p.ReleaseProducerApplication     : Started ReleaseProducerApplication in 4.388 seconds (JVM running for 4.922)
+2016-09-05 00:44:21.761  INFO 5096 --- [http-nio-8099-exec-1] o.a.c.c.C.[.[localhost].[/activemq]      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-05 00:44:21.761  INFO 5096 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-05 00:44:21.780  INFO 5096 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
